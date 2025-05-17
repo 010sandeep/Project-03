@@ -59,7 +59,7 @@
 				style="color: #fff; font-size: 28px;"></i></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="nav navbar-nav ml-auto">
+			<ul class="nav navbar-nav  ml-auto">
 				<a class="nav-link" href="#"> <span class="sr-only">(current)</span>
 				</a>
 				<%

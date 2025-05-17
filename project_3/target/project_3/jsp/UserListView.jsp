@@ -20,7 +20,7 @@
 	src="<%=ORSView.APP_CONTEXT%>/js/CheckBox11.js"></script>
 <style>
 .hm {
-	background-image: url('<%=ORSView.APP_CONTEXT%>/img/list2.jpg');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/img/al.jpg');
 	
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
