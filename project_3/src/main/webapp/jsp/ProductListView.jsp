@@ -1,3 +1,4 @@
+<%@page import="java.util.HashMap"%>
 <%@page import="in.co.rays.project_3.dto.ProductDTO"%>
 <%@page import="in.co.rays.project_3.controller.ProductListCtl"%>
 <%@page import="java.util.Iterator"%>
@@ -111,7 +112,21 @@
 						placeholder="Enter productName" class="form-control"
 						value="<%=ServletUtility.getParameter("productName", request)%>">
 				</div>
+
+				<div class="col-sm-3">
+					<%
+						HashMap map = new HashMap();
+							map.put("High", "High");
+							map.put("Medium", "Medium");
+							map.put("Low", "Low");
+							String htmlList = HTMLUtility.getList("productCategory", dto.getProductCategory(), map);
+					%>
+					<%=htmlList%>
+					<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("productCategory", request)%></font></br>
+				</div>
 				&emsp;
+
+
 				<div class="col-sm-2">
 					<input type="text" name="productAmmount"
 						placeholder="Enter productAmmount" class="form-control"
